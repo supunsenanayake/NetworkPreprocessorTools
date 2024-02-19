@@ -1,0 +1,87 @@
+/* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* Center the DIV horizontally */
+}
+
+.dataPackets {
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    margin: auto;
+    background: #333;
+    color: #fff;
+    padding-top: 70px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    /* Center the DIV horizontally */
+}
+
+.body {
+
+
+    background: #4e4d4d;
+    color: #fff;
+}
+
+.header,
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.header {
+    top: 0;
+}
+
+.fixed-footer {
+    bottom: 0;
+}
+
+/* Some more styles to beutify this example */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+
+.container p {
+    line-height: 200px;
+    /* Create scrollbar to test positioning */
+}
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: -6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .button4:hover {background-color: #e7e7e7;}
+
+  .label{
+    text-align: left;
+  }
