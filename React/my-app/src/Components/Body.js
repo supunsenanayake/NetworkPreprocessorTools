@@ -24,7 +24,7 @@ class Body extends React.Component {
             parm3: param3
 
           }).toString();
-        const streamUrl = `http://127.0.0.1:8080/stream-data?${xx}`;
+        const streamUrl = `http://192.168.1.4:8080/stream-data?${xx}`;
 
         fetch(streamUrl).then(response => {
             // The response body is a ReadableStream

@@ -14,7 +14,7 @@ import network.tool.service.TsharkEth0LiveTraffic;
 
 @RestController
 public class StreamDataController {
-	@CrossOrigin(origins = "http://localhost:3000")
+	@CrossOrigin(origins = "*")
 	@GetMapping("/stream-data")
 	public SseEmitter streamData(@RequestParam("opt") String opt, @RequestParam("parm2") String parm2,
 			@RequestParam("parm3") String pram3) {
@@ -49,7 +49,7 @@ public class StreamDataController {
 				try {
 					TsharkEth0LiveTraffic.get10Packets(emitter, Integer.parseInt(parm2));
 					emitter.complete();
-					System.out.println("SSSSSSSSSSSSSSSSS");
+					
 				} catch (Exception e) {
 					emitter.completeWithError(e);
 				}

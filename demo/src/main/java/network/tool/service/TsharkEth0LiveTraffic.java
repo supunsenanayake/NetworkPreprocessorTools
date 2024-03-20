@@ -50,7 +50,7 @@ public class TsharkEth0LiveTraffic {
 
 		// Command to capture packets on eth0 interface continuously
 		ProcessBuilder processBuilder = new ProcessBuilder("./test.sh", src, dst);
-		processBuilder.directory(new File("/opt/Testcode/script/2-19/")); // Set the working directory
+		processBuilder.directory(new File("/opt/test/GIT/24-03-20/1/NetworkPreprocessorTools/demo/target/classes/")); // Set the working directory
 		processBuilder.redirectErrorStream(true); // Combine stdout and stderr
 
 		try {
@@ -77,7 +77,7 @@ public class TsharkEth0LiveTraffic {
 		while (true) {
 			try {
 				// Command to execute tshark with the specified interface and count
-				String command = "tshark -i enp2s0 -c 10";
+				String command = "tshark -i tap0 -c 10";
 
 				// Using ProcessBuilder to execute the command
 				ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
@@ -95,7 +95,7 @@ public class TsharkEth0LiveTraffic {
 				int exitCode = process.waitFor();
 				System.out.println("Exited with code: " + exitCode);
 
-				// Sleep for 10 seconds before capturing the next set of packets
+				
 				Thread.sleep(seconds * 1000);
 
 			} catch (IOException | InterruptedException e) {

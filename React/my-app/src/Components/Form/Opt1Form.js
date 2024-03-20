@@ -46,7 +46,7 @@ class Opt1Form extends Component {
 
                 </div>
 
-                <button className="button button4"  onClick={() =>this.props.onCallChild2('opt1',this.enterCmd.current.value)}  type="submit">Click</button>
+                <button className="button button4"  onClick={() =>this.props.onCallChild2('opt1',this.enterCmd.current.value)}  type="submit">Apply</button>
             </form>
         );
     }

@@ -59,7 +59,7 @@ class Opt2Form extends Component {
                         <input type="text" ref={this.desIp} />
                     </label>
                 </div> */}
-                <button className="button button4" onClick={() =>this.props.onCallChild2('opt2',this.srcIp.current.value,this.desIp.current.value)} type="submit">Click</button>
+                <button className="button button4" onClick={() =>this.props.onCallChild2('opt2',this.srcIp.current.value,this.desIp.current.value)} type="submit">Filter</button>
             </form>
         );
     }
